@@ -1,0 +1,137 @@
+/*Estilo a mi Navegación*/
+header {
+ background-color: var(--colorAzul);
+}
+
+.header {
+    height: 85px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipo1{
+    width: auto;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--colorBlanco);
+    font-size: 1.25rem;
+}
+
+.abrir-menu, .cerrar-menu, .logotipo2 {
+    display: none;
+}
+
+/*Vista tablet*/
+@media (max-width: 1023px) {
+    
+    /*Estilo a mi Navegación*/
+    .nav-list li a {
+        text-decoration: none;
+        color: var(--colorBlanco);
+        font-size: 1rem;
+    }
+}
+
+/*Vista Mobile*/
+@media (max-width: 767px) {
+    
+    /*Estilo a mi Navegación*/
+    .abrir-menu, .cerrar-menu {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .abrir-menu img, .cerrar-menu img  {
+        width: 35px;
+        height: auto;
+    }
+
+    .bi {
+        font-size: 2rem;
+        color: var(--colorBlanco);
+        
+    }
+
+    .bi:hover {
+        color: var(--colorVerde);
+    }
+
+    .logotipo2 {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+    
+    .header {
+        padding: 20px 0;
+    }
+
+    .header2 {
+        width: 100%;
+        height: 85px;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: var(--colorAzul);
+    }
+
+    .menu.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        padding: 50px 30px;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+    
+    .nav-list li a {
+        text-decoration: none;
+        color: var(--colorBlanco);
+        font-size: 20px;
+    }
+}

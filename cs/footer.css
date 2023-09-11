@@ -1,0 +1,26 @@
+/*Pie de Pagina*/
+footer {
+    background-color: var(--colorAzul);
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.copy p {
+    color: var(--colorBlanco);
+    text-align: center;
+}
+
+
+/*Vista Mobile*/
+@media (max-width: 767px) {
+    
+    /*Pie de Pagina*/
+    .copy {
+        padding: 20px 0;
+    }
+}

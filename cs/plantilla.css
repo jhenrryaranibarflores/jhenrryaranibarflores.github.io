@@ -1,0 +1,17 @@
+@import url('style.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('chatbot.css');
+
+/*Nombre de la sección*/
+
+/*Vista tablet*/
+@media (max-width: 1023px) {
+
+}
+
+
+/*Vista Mobile*/
+@media (max-width: 767px) {
+    
+}

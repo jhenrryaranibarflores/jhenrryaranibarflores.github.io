@@ -1,0 +1,37 @@
+/*boton de whatsapp*/
+.whatsapp {
+    position: fixed;
+    z-index: 10000;
+    margin: 20px;
+    inset: auto 0px 0px auto;
+    background-color: #25d366;
+    border-radius: 100px;
+}
+
+.whatsapp a{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.whatsapp a img {
+    width: 50px;
+    height: auto;
+}
+
+
+/*Vista Mobile*/
+@media (max-width: 767px) {
+    
+    /*boton de whatsapp*/
+    .whatsapp.visible {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
