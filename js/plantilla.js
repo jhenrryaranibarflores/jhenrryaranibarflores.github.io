@@ -25,11 +25,11 @@ header.innerHTML = `
     <nav class="nav">
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="plantilla.html">Equipo</a></li>
+            <li><a href="about.html">Equipo</a></li>
             <li><a href="https://www.behance.net/jhenrryaranibar" target="_blank">Proyectos</a></li>
         </ul>
         <!-- Mi boton de contacto -->
-        <a href="#formulario" class="bt-contacto" id="bt-contacto">
+        <a href="form.html" class="bt-contacto" id="bt-contacto">
             <button type="button" class="btn1">Contactar</button>
         </a>
     </nav>
