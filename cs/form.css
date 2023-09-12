@@ -1,0 +1,84 @@
+@import url('style.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('chatbot.css');
+
+/*formulario*/
+.formulario {
+    gap: 50px;
+    align-items: center;
+}
+
+.img_formulario img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--colorGris);
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15PX;
+}
+
+.input-1 {
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.input-1:focus {
+    outline: 2px solid var(--colorAzul);
+    border-radius: 5px;
+}
+
+#enviar {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+/*Vista tablet*/
+@media (max-width: 1023px) {
+
+}
+
+
+/*Vista Mobile*/
+@media (max-width: 767px) {
+    
+    /*formulario*/
+    .formulario {
+        gap: 50px;
+        align-items: center;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    .input-1 {
+        font-size: 12px;
+    }
+
+    #enviar {
+        cursor: pointer;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}

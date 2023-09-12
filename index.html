@@ -14,16 +14,16 @@
     <meta property="og:description" content="Somos un estudio de branding especializado en crear y potenciar marcas con personalidad, valores y propósito. Ofrecemos servicios de diseño gráfico, estrategia de comunicación, desarrollo web y gestión de redes sociales.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jhenrryaranibarflores.github.io">
-    <meta property="og:image" content="https://jhenrryaranibarflores.github.io/image/preview.png">  
+    <meta property="og:image" content="https://jhenrryaranibarflores.github.io/image/preview.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJJTC6743V"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-NJJTC6743V');
-</script>
+    gtag('config', 'G-NJJTC6743V');
+    </script>    
 </head>
 <!-- Contenido de mi pagina -->
 <body>
@@ -50,11 +50,11 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="plantilla.html">Equipo</a></li>
+                        <li><a href="about.html">Equipo</a></li>
                         <li><a href="https://www.behance.net/jhenrryaranibar" target="_blank">Proyectos</a></li>
                     </ul>
                     <!-- Mi boton de contacto -->
-                    <a href="#formulario" class="bt-contacto" id="bt-contacto">
+                    <a href="form.html" class="bt-contacto" id="bt-contacto">
                         <button type="button" class="btn1">Contactar</button>
                     </a>
                 </nav>
@@ -69,7 +69,7 @@
             <div class="t_portada">
                 <h2>Transformamos ideas en marcas icónicas</h2>
                 <p>Destaca el propósito y objetivo principal de la línea de servicios de branding.</p>
-                <a href="https://www.behance.net/jhenrryaranibar"><button class="btn2">Ver Proyectos</button></a>
+                <a href="https://www.behance.net/jhenrryaranibar" target="_blank"><button class="btn2">Ver Proyectos</button></a>
             </div>
             <div class="img_portada">
                 <img src="image/portada.webp" alt="portada" width="315" height="492">
@@ -136,16 +136,19 @@
                 <div class="img_formulario">
                     <img src="image/portada.webp" alt="portada" width="315" height="492">
                 </div>
-                <form action="" method="post">
-                    <h4>Formurlario de Contacto</h4>
-                    <p>Completa el siguiente formulario y nos pondremos en contacto</p>
+                <form action="https://formsubmit.co/jhenrryaranibar@yahoo.com" method="post" autocomplete="off">
+                    <h4>Suscribete</h4>
+                    <p>Dejanos tus datos para estar al día y no perderte las novedades</p>
                     <div class="input-group">
-                        <input class="input-1" type="text" name="first-name" id="nombre" placeholder="Ingresa tu nombre">
-                        <input class="input-1" type="text" name="last-name" id="apellido" placeholder="Ingresa tu apellido">
-                        <input class="input-1" type="tel" name="phone" id="celular" placeholder="Ingresa tu número">
-                        <input class="input-1" type="email" name="email" id="correo" placeholder="Ingresa tu correo">
-                        <textarea class="input-1" name="message" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje aqui..."></textarea>
-                        <input type="submit" value="Enviar formulario" class="btn2" id="enviar">
+                        <input class="input-1" type="text" name="name" id="nombre" required placeholder="Ingresa tus nombres y apellidos">    
+                        <input class="input-1" type="email" name="email" id="correo" required placeholder="Ingresa tu correo electrónico">
+                        <div class="aceptar">
+                            <input class="checkbox" type="checkbox" name="polity" id="politica" required>
+                            <label for="politica" class="politica">Si te suscribes, aceptas nuestra <a href="http://" class="link-politica">Política de Privacidad</a>.</label>
+                        </div>
+                        <button type="submit" class="btn2" id="enviar">Enviar formulario</button>
+                        <input type="hidden" name="next" value="https://jhenrryaranibarflores.github.io">
+                        <input type="hidden" name="captcha" value="false">
                     </div>
                 </form>
             </div>
@@ -158,7 +161,7 @@
             <p>Copyright © 2023 Creativo 12 Estudio S.A.C. | Todos los derechos reservados</p>
         </div>
     </footer>
-    <!-- Botn de whatsapp -->
+    <!-- Boton de whatsapp -->
     <section id="chatwp">
         <div class="whatsapp" id="whatsapp" >
             <a href="https://wa.link/tt27j2" target="_blank">

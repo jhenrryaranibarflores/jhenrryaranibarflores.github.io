@@ -122,35 +122,63 @@ form {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: var(--colorGris);
-    padding: 50px;
+    padding:  0 50px;
     border-radius: 25px;
     text-align: center;
+    & h4 {
+        color: var(--colorAzul);
+    }
 }
+
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 15PX;
+    gap: 15px;
 }
 
 .input-1 {
-    padding: 10px;
-    border-style: none;
+    padding: 15px;
+    border: solid 1px var(--colorGris);
     border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .input-1:focus {
-    outline: 2px solid var(--colorAzul);
+    outline: 1px solid var(--colorAzul);
     border-radius: 5px;
+}
+
+.aceptar {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.checkbox {
+    margin-top: 2px;
+}
+
+.politica{
+    text-align: start;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.link-politica{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 #enviar {
     cursor: pointer;
+    margin-top: 15px;
     padding: 10px 25px;
     border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.25rem;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 
@@ -212,22 +240,5 @@ form {
     .formulario {
         gap: 50px;
         align-items: center;
-    }
-
-    form {
-        padding: 25px;
-    }
-
-    .input-1 {
-        font-size: 12px;
-    }
-
-    #enviar {
-        cursor: pointer;
-        padding: 10px 25px;
-        border: none;
-        border-radius: 50px;
-        font-weight: 600;
-        font-size: 1.25rem;
     }
 }
