@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+/*Rootear de toda la pagina*/
+:root {
+    --colorazul: #0a39e6;
+    --colorblanco: #ffffff;
+    --colornegro: #000000;
+    --colorgristexto1: #888888;
+    --colorgrisfondo: #efefef;
+    --colorgristexto2: #85929e;
+
+    --fontlato: "Lato", sans-serif;
+}
+
+::selection {
+    background-color: var(--colornegro);
+    color: var(--colorblanco);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fontlato);
+    font-size: 16px;
+}
+
+
+/*Estilo de toda la pagina*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--colorgristexto1);
+}
+
+a:visited {
+    color: var(--colornegro);
+}
+
+
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+.btn1 {
+    border: 2px solid var(--colorblanco);
+    background-color: var(--colorblanco);
+    color: var(--colorazul);
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: var(--colorblanco);
+
+}
+
+.btn2 {
+    border: 2px solid var(--colorazul);
+    background-color: var(--colorazul);
+    color: var(--colorblanco);
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--colorazul);
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 80px 0px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+
+
+
+/*Header - menu de navegación*/
+header {
+    background-color: var(--colorazul);
+}
+
+.header {
+    height: 95px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipo1 {
+    height: 100%;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--colorblanco);
+    font-size: 1.25rem;
+}
+
+.abrir-menu,
+.logotipo2,
+.cerrar-menu {
+    display: none;
+}
+
+/*estilos mi portada*/
+.portada {
+    gap: 50px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+/*estilos de servicios*/
+
+#servicio {
+    background-color: var(--colorgrisfondo);
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.servicio-titulo h3 {
+    text-align: center;
+    color: var(--colorazul);
+}
+
+.servicio-lista {
+    gap: 50px;
+}
+
+.servicio-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio-1 img {
+    padding-left: 0px;
+    width: 50%;
+    height: auto;
+    transition: transform 0.75s ease;
+}
+
+.servicio-1 img:hover {
+    transform: scale(1.2);
+}
+
+.servicio-1-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 25px;
+
+    & p {
+        text-align: center;
+    }
+}
+
+#prueba {
+    background-image: url(imagenes/fondo-1620x500.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.prueba {
+    height: 1000px;
+}
+
+/*estilos de formulario 1*/
+
+#formulario {
+    background-color: var(--colorgrisfondo);
+}
+
+.formulario {
+    gap: 50px;
+}
+
+.formulario-1 h3 {
+    padding-bottom: 25px;
+    color: var(--colorazul);
+}
+
+.formulario-2 {
+    background-color: var(--colorblanco);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.formulario-2 h5 {
+    padding-bottom: 25px;
+    text-align: center;
+    color: var(--colorazul);
+}
+
+.formulario-2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & button {
+        margin-top: 25px;
+    }
+}
+
+.formulario-group label {
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: var(--colorazul);
+}
+
+.formulario-group input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colorgrisfondo);
+}
+
+.formulario-group input:focus,
+textarea:focus {
+    outline: 1px solid var(--colorazul);
+}
+
+/*estilos de formulario 2*/
+
+.formulario-grupo {
+    display: flex;
+}
+
+.formulario-grupo label {
+    display: block;
+    width: 100px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: var(--colorazul);
+}
+
+.formulario-grupo input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colorgrisfondo);
+}
+
+.formulario-grupo input:focus,
+textarea:focus {
+    outline: 1px solid var(--colorazul);
+}
+
+.btn2-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/*estilos de formulario 3*/
+
+.formulario-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-input input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colorgrisfondo);
+}
+
+.formulario-input input:focus,
+textarea:focus {
+    outline: 1px solid var(--colorazul);
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--colorazul);
+}
+
+
+.info {
+    & img {
+        width: 50%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    & p {
+        color: var(--colorblanco);
+    }
+}
+
+.contacto {
+    & h5 {
+        padding-bottom: 30px;
+        color: var(--colorblanco);
+    }
+
+    & .contacto-lista ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & li a {
+            display: flex;
+            gap: 15px;
+        }
+
+        & li a p {
+            color: var(--colorblanco);
+        }
+    }
+}
+
+.contacto-lista-imagen {
+    width: 25px;
+    height: auto;
+}
+
+.rrss {
+    margin-bottom: 50px;
+
+    & h5 {
+        padding-bottom: 30px;
+        color: var(--colorblanco);
+    }
+
+    & .rrss-iconos {
+        display: flex;
+        gap: 10px;
+        height: 40px;
+
+        & img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+.newsletter h5 {
+    padding-bottom: 30px;
+    color: var(--colorblanco);
+}
+
+.newsletter-caja {
+    display: flex;
+}
+
+.newsletter-caja input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    background-color: var(--colorgrisfondo);
+}
+
+.newsletter-caja input:focus {
+    outline: 1px solid var(--colorazul);
+}
+
+.newsletter-caja button {
+    background-color: var(--colorblanco);
+    border-radius: 0;
+
+    & img {
+        width: 25px;
+        height: auto;
+    }
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    & p {
+        color: var(--colorblanco);
+    }
+
+
+}
+
+
+/*Formulario 10*/
+
+.formulario10 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulario10-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & input {
+        padding: 5px;
+    }
+}
+
+.btn-contactar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Boton de whatsapp*/
+
+.whatsapp {
+    position: fixed;
+    z-index: 10000;
+    margin: 20px;
+    inset: auto 0px 0px auto;
+
+}
+
+
+.whatsapp a img {
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+
+    /*Estilo de toda la pagina*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--colorgristexto1);
+    }
+
+    a:visited {
+        color: var(--colornegro);
+    }
+
+
+
+    button {
+        cursor: pointer;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 1.25rem;
+        background-color: transparent;
+    }
+
+    .btn1 {
+        border: 2px solid var(--colorblanco);
+        background-color: var(--colorblanco);
+        color: var(--colorazul);
+    }
+
+    .btn1:hover {
+        background-color: transparent;
+        color: var(--colorblanco);
+
+    }
+
+    .btn2 {
+        border: 2px solid var(--colorazul);
+        background-color: var(--colorazul);
+        color: var(--colorblanco);
+    }
+
+    .btn2:hover {
+        background-color: transparent;
+        color: var(--colorazul);
+
+    }
+
+    .container {
+        padding: 80px 25px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /*Header - menu de navegación*/
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: flex;
+        align-items: center;
+
+        & img {
+            width: 35px;
+            height: auto;
+        }
+    }
+
+    .logotipo2 {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+
+
+
+    header {
+        background-color: var(--colorazul);
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+
+
+    .menu {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--colorazul);
+
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+
+    .whatsapp.visible {
+        visibility: hidden;
+    }
+
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        padding: 20px 25px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .nav-list li a {
+        font-size: 1.25rem;
+    }
+
+
+}
