@@ -96,14 +96,19 @@
     border-radius: 25px;
 }
 
+
+/* añadir videos ads */
+
+
+
 /* estilos de video ads */
 
 /* estilos del mapa */
 
-.mapa {
+/* .mapa {
     display: flex;
     justify-content: center;
-}
+} */
 
 
 
@@ -111,7 +116,7 @@
 
 /* Estilos del buscador */
 
-.input_buscador {
+/* .input_buscador {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -125,7 +130,7 @@
     border: none;
     outline: none;
 
-}
+} */
 
 
 
