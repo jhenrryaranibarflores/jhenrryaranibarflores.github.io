@@ -1,0 +1,271 @@
+/* En esta hoja de estilo se agrega estilos que se usaran mas 
+de 1 vez como: titulos, parrafo, enlaces, botones y grillas */
+
+
+/* Importar la tipografía de https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Agregar variables personalizados */
+:root {
+    /* var color */
+    --colorazul: #0A39E4;
+    --colornegro: #25252D;
+    --colorceleste: #48D6FF;
+    --colorgris: #858585;
+    --colorblanco: #F2F2F2;
+    /* var font-family */
+    --fontnunito: "Nunito", sans-serif;
+}
+
+/* Rootear la página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fontnunito);
+    font-size: 16px;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 80px 0;
+}
+
+
+
+/* TÍTULOS */
+
+/* Grosor y Mayus */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Tamaño */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*BOTONES/
+
+/* Rootear Estilo */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Boton 1 - Celeste */
+.btn1 {
+    background-color: var(--colorceleste);
+    color: var(--colorazul);
+    border: 2px solid var(--colorceleste);
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: var(--colorblanco);
+    border: 2px solid var(--colorblanco);
+}
+
+/* Boton 2 - Azul */
+.btn2 {
+    background-color: var(--colorazul);
+    color: var(--colorblanco);
+    height: fit-content;
+    border: 2px solid var(--colorazul);
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--colorazul);
+    border: 2px solid var(--colorazul);
+}
+
+/* Boton 3 - degradado */
+.btn3 {
+    background: linear-gradient(90deg, var(--colorazul), #29CB91);
+    color: var(--colorblanco);
+    border: 6px solid var(--colorblanco);
+    padding: 15px 80px;
+    font-size: 2rem;
+}
+
+.btn3:hover {
+    background: transparent;
+}
+
+
+/* GRILLAS */
+
+/* Grilla de 2 columnas */
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+/* Grilla de 3 columnas */
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+}
+
+/* Grilla de 4 columnas */
+.grid_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+}
+
+
+@media (max-width: 1023px) {
+
+    /* Contenedor */
+    .container {
+        padding: 80px 50px;
+    }
+
+
+
+    /* Modificar tamaño de h */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+    /* Modificar 2 columnas a 1 columna */
+
+    .grid_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .grid_3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Contenedor */
+    .container {
+        padding: 80px 50px;
+    }
+
+
+
+    /* Modificar tamaño de h */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+    /* Modificar 2 columnas a 1 columna */
+
+    .grid_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .grid_3 {
+        grid-template-columns: 1fr;
+    }
+}

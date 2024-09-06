@@ -1,0 +1,309 @@
+/* Aquí se define exclusivamente estilo aplicado a la página home/index */
+
+/* Importa el stlyles.css para enlazar los estilos del brand, header y footer */
+@import url(styles.css);
+
+
+
+/* Estilos de la sección Portada 1 */
+
+#portada {
+    background-color: #efefef;
+}
+
+.portada {
+    height: calc(100vh - 91px);
+}
+
+.foto_portada {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.textos_portada {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h1 {
+        color: var(--colorazul);
+    }
+}
+
+/* Estilos de la sección Portada 2 */
+#portada2 {
+    background-image: url("../image/bannerweb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.portada2 {
+    height: calc(100vh - 91px);
+}
+
+.boton_portada2 {
+    position: relative;
+    top: 55%;
+}
+
+.producto {
+    position: relative;
+    display: inline-block;
+
+    & .foto_producto {
+        width: 100%;
+        height: auto;
+    }
+
+    & .boton_producto {
+        position: absolute;
+        bottom: 0%;
+        left: 20%;
+        padding: 25px;
+    }
+}
+
+/* esstilos de productos */
+
+.productos_titulo h3 {
+    text-align: center;
+    color: var(--colorazul);
+    padding-bottom: 80px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    & p {
+        text-align: center;
+    }
+}
+
+.servicio_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* estilos de video ads */
+
+/* estilos del mapa */
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* Estilos del buscador */
+
+.input_buscador {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border: 2px solid var(--colorazul);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+#buscador {
+    width: 100%;
+    border: none;
+    outline: none;
+
+}
+
+
+
+/* Estilos banner */
+
+#banner {
+    background-color: var(--colorazul);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_textos {
+    color: var(--colorblanco);
+}
+
+/* esstilos de testimonios */
+
+.testimonios_titulo h3 {
+    text-align: center;
+    color: var(--colorazul);
+    padding-bottom: 80px;
+}
+
+.testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+
+    & h5 {
+        text-transform: none;
+        color: var(--colorazul);
+    }
+}
+
+.testimonio_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+@media (max-width: 1023px) {
+
+    /* modificar tamaño de imagen de la portada */
+    .foto_portada {
+        width: auto;
+        height: 50%;
+    }
+
+    /* modificar alineación de textos */
+    .textos_portada {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
+        & h1 {
+            color: var(--colorazul);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    /* modifica el tamaño de la imagen de servicios */
+    .servicio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+    /* modifica el tamaño de la imagen de testimonios y alineado el contneido al centro */
+    .testimonio {
+        align-items: center;
+        gap: 25px;
+
+        & h5 {
+            text-transform: none;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+
+    /* modifica el tamaño de la imagen de testimonios */
+    .testimonio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+    /* cambiar direccion del displey alinear el contenido al centro */
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .banner_textos h3,
+    p {
+        text-align: center;
+    }
+}
+
+
+/* Modificaciones a las propiedades que solo se ven afectados cuando ingresan desde el celular */
+
+
+@media (max-width: 767px) {
+
+    /* modificar tamaño de imagen de la portada */
+    .foto_portada {
+        width: auto;
+        height: 50%;
+    }
+
+    /* modificar alineación de textos */
+    .textos_portada {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
+        & h1 {
+            color: var(--colorazul);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    /* modifica el tamaño de la imagen de servicios */
+    .servicio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+    /* modifica el tamaño de la imagen de testimonios y alineado el contneido al centro */
+    .testimonio {
+        align-items: center;
+        gap: 25px;
+
+        & h5 {
+            text-transform: none;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+
+    /* modifica el tamaño de la imagen de testimonios */
+    .testimonio_foto {
+        width: 75%;
+        height: auto;
+    }
+
+    /* cambiar direccion del displey alinear el contenido al centro */
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .banner_textos h3,
+    p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,245 @@
+/* Aquí se define exclusivamente estilo aplicado al Header */
+
+header {
+    background-color: var(--colorazul);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+
+    & img {
+        width: auto;
+        height: 41px;
+    }
+}
+
+.menu nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    & ul {
+        display: flex;
+        gap: 50px;
+
+        & li {
+            list-style: none;
+            color: white;
+
+            & a {
+                color: var(--colorblanco);
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            & a:hover {
+                color: var(--colorceleste);
+            }
+        }
+    }
+}
+
+.abrir_menu {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+    .header {
+        display: block;
+    }
+
+
+    .abrir_menu {
+        display: block;
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 25px 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        background-color: var(--colorazul);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+
+
+    .menu nav {
+        flex-direction: column;
+
+        & ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .header {
+        display: block;
+    }
+
+
+    .abrir_menu {
+        display: block;
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 25px 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .logo1 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+
+        & img {
+            width: auto;
+            height: 40px;
+        }
+
+        & button img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        background-color: var(--colorazul);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+
+
+    .menu nav {
+        flex-direction: column;
+
+        & ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .menu.visible {
+        visibility: visible;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el header 
+header {
+    background-color: #160fdf;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+*/

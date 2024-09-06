@@ -1,0 +1,5 @@
+/* Importa los estilos de brnad, header y footer */
+
+@import url(brand.css);
+@import url(header.css);
+@import url(footer.css);
