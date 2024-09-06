@@ -99,6 +99,27 @@
 
 /* añadir videos ads */
 
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* estilos del buscador */
+
+#buscador1 {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input_buscador {
+    border: 2px solid var(--colorazul);
+    border-radius: 50px;
+    height: fit-content;
+    padding: 10px 25px;
+}
 
 
 /* estilos de video ads */
