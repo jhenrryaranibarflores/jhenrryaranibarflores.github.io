@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENATI</title>
+    <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+    <!-- Aquí va el header/Menu de navegación-->
+    <header>
+        <div class="container header">
+            <div class="logo1">
+                <img src="image/logo-blanco.png" alt="" width="250px" height="69">
+                <button id="abrir" class="abrir_menu">
+                    <img src="image/abrir-menu.png" alt="boton abrir" width="512px" height="512px">
+                </button>
+            </div>
+
+            <div id="menu" class="menu">
+                <div class="logo2">
+                    <img src="image/logo-blanco.png" alt="" width="250px" height="69">
+                    <button id="cerrar" class="cerrar_menu">
+                        <img src="image/cerrar-menu.png" alt="boton cerrar" width="512px" height="512px">
+                    </button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="nosotros.html">nosotros</a></li>
+                        <li><a href="testimonios.html">testimonio</a></li>
+                        <li><a href="portafolio">portafolio</a></li>
+                    </ul>
+                    <a href="contacto.html">
+                        <button class="btn1" type="button">contacto</button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Aquí va el contenido principal de la página -->
+    <main>
+        <section id="formulario">
+            <div class="formulario container grid_2">
+                <div class="datos">
+                    <h4>Ubicación</h4>
+                    <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
+                    <div class="listas_datos">
+                        <div class="listas_datos_1">
+                            <div class="listas_datos_imagen">
+                                <img src="image/messenguer.svg" alt="" width="40px" height="40px">
+                            </div>
+                            <div class="listas_datos_textos">
+                                <h6>Messenguer</h6>
+                                <a
+                                    href="https://m.me/jhenrryaranibar?text=Hello%20and%20Welcome">m.me/jhenrryaranibar</a>
+                            </div>
+                        </div>
+                        <div class="listas_datos_1">
+                            <div class="listas_datos_imagen">
+                                <img src="image/whatsapp.svg" alt="" width="50px" height="50px">
+                            </div>
+                            <div class="listas_datos_textos">
+                                <h6>Whatsapp</h6>
+                                <a href="https://wa.me/+51950925447?text=Hello%20and%20Welcome">wa.me/+51950925447</a>
+                            </div>
+                        </div>
+                        <div class="listas_datos_1">
+                            <div class="listas_datos_imagen">
+                                <img src="image/correo.svg" alt="" width="40px" height="40px">
+                            </div>
+                            <div class="listas_datos_textos">
+                                <h6>Correo </h6>
+                                <a href="mailto:contacto@senati.pe?body=Hello%20and%20Welcome">contacto@senati.pe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulario_items">
+                    <h4>Formulario de contacto</h4>
+                    <form action="https://formsubmit.co/jhenrryaranibar@yahoo.com" method="post"
+                        class="formulario_input">
+                        <div class="grupos_input">
+                            <input type="text" name="name" id="name" placeholder="Escribe tus Nombres*" required>
+                        </div>
+                        <div class="grupos_input">
+                            <input type="text" name="lastname" id="lastname" placeholder="Escribe tus Apellidos*"
+                                required>
+                        </div>
+                        <div class="grupos_input">
+                            <input type="tel" name="number" id="number" placeholder="Escribe tu número*" required>
+                        </div>
+                        <div class="grupos_input">
+                            <input type="email" name="email" id="email" placeholder="Escribe tu correo*" required>
+                        </div>
+                        <div class="grupos_input">
+                            <textarea name="message" id="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div class="grupos_input">
+                            <button type="submit" class="btn2">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h5 class="titulomapa">Visitanos en nuestra oficina</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6671611523393!2d-77.60240952406691!3d-11.063561724376452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9107206770068add%3A0x987da53516883393!2sSENATI%20CFP%20HUAURA!5e0!3m2!1sen!2spe!4v1726244340515!5m2!1sen!2spe"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Aquí va el footer/Pie de pagina -->
+    <footer id="footer">
+        <div class="container footer">
+            <div class="copyrigth">
+                <p>© SENATI 2017. Todos los derechos reservados.</p>
+            </div>
+            <div class="politicas">
+                <a href="http://">Políticas de privacidad y uso de datos</a>
+                <a href="http://">Términos y Condiciones</a>
+                <a href="tel:+51987654321">987654321</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
