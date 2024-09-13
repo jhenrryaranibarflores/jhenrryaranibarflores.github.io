@@ -1,0 +1,49 @@
+@import url(styles.css);
+
+/* Estilos de datos del formulario columna 1 */
+.datos p {
+    margin-top: 25px;
+}
+
+.listas_datos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.listas_datos_1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.listas_datos_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: var(--colorblanco);
+    border-radius: 10px;
+}
+
+/* Estilos de items del formulario columna 2 */
+
+.formulario_input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.grupos_input input,
+textarea {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.titulomapa {
+    text-align: center;
+    padding: 50px;
+}
